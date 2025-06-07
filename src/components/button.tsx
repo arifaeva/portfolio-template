@@ -6,7 +6,7 @@ const style = tv({
   variants: {
     variant: {
       primary:
-        "bg-black text-white hover:bg-zinc-800 active:bg-zinc-800 dark:hover:bg-black/60 active:bg-black-60",
+        "bg-black text-white border border-black hover:bg-zinc-800 hover:border-zinc-800 active:bg-zinc-800 active:border-zinc-800 dark:hover:bg-zinc-950 dark:hover:border-zinc-950 dark:active:bg-zinc-950 dark:active:border-zinc-950",
       secondary:
         "bg-transparent border border-neutral-500 text-neutral-500 dark:hover:text-neutral-600 dark:text-neutral-100 dark:border-neutral-100 hover:bg-zinc-100 active:bg-zinc-100",
     },
