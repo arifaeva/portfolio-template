@@ -118,7 +118,7 @@ export default async function Home() {
             <h2 className="text-2xl font-semibold dark:text-white">Blog</h2>
             <Link href="/blog">
               <p className="text-neutral-500 hover:underline">
-                See My Another Blog &#10095;
+                See My Other Blogs &#10095;
               </p>
             </Link>
           </div>
