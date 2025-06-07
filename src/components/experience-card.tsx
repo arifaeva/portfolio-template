@@ -32,19 +32,25 @@ export const ExperienceCard = (props: Props) => {
               {props.company}
               {props.endPeriod ? null : <PresentTag />}
             </h4>
-            <p className="text-neutral-400">{props.position}</p>
+            <p className="text-neutral-400 dark:text-neutral-500">
+              {props.position}
+            </p>
           </div>
-          <p className="text-neutral-400 uppercase">
+          <p className="text-neutral-400 dark:text-neutral-500 uppercase">
             {props.startPeriod}
             {props.endPeriod ? ` - ${props.endPeriod}` : null}
           </p>
         </div>
 
         <div className="space-y-1 overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-[800px] lg:pl-8 pl-4">
-          <p className="text-neutral-500">{props.description}</p>
-          <p className="text-neutral-500">Key Responsibilites:</p>
+          <p className="text-neutral-500 dark:text-neutral-400">
+            {props.description}
+          </p>
+          <p className="text-neutral-500 dark:text-neutral-400">
+            Key Responsibilites:
+          </p>
           {props.keys?.map((key, index) => (
-            <p key={index} className="text-neutral-500">
+            <p key={index} className="text-neutral-500 dark:text-neutral-400">
               &#8226; {key}
             </p>
           ))}
